@@ -12,8 +12,8 @@ public class LaptopConfig extends Laptop{
 	@Override
 	void displayConfig() 
 	{
-		 // writ the code....
-		System.out.println("Belogs to Laptop, implemented in Demo6 ") ;
+		 // writ the change  code....
+		System.out.println("Belogs to Laptop, implemented in LaptopConfig") ;
 	}
 
 	public static void main(String[] args )
