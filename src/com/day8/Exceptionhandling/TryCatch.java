@@ -11,8 +11,9 @@ public class TryCatch {
 		}
 		catch (ArithmeticException e)  // catch divide-by-zero error
 		{
-	             	System.out.println("Division by zero not posible");
+	             	System.out.println("Division by zero not posible please try any other number");
 		}
 		System.out.println("After catch statement.");
 		}
+	
 }
