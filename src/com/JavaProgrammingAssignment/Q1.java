@@ -4,25 +4,37 @@ import java.util.Random;
 
 //An example of nested try statements.
 //Demonstrate throw.
+//class Q1 {
+//static void demoproc() {
+//throw new ArithmeticException();
+//
+//}
+//public static void main(String args[]) {
+//
+//demoproc();
+//}
+//}
 class Q1 {
-static void demoproc() {
-try {
-throw new ArithmeticException();
+static void throwOne() throws NoClassDefFoundError,NoSuchMethodException
+{
+System.out.println("Inside throwOne.");
 
-} catch(Exception e) {
-System.out.println("Caught inside demoproc.");
-System.out.println(e);
+throw new NoSuchMethodException();
 
-//	System.out.println(e.getMessage( ));
 
-throw new ArrayIndexOutOfBoundsException(); // rethrow the exception
-}
 }
 public static void main(String args[]) {
-try {
-demoproc();
-} catch(Exception e) {
-System.out.println("Recaught: " + e);
-}
+	try {
+		throwOne();
+	}
+	catch(NoSuchMethodException  e)
+	{
+		System.out.println("ArithmeticExcetion : "+e);
+	}
+	catch(ArithmeticException  e)
+	{
+		System.out.println("ArithmeticExcetion : "+e);
+	}
+
 }
 }
